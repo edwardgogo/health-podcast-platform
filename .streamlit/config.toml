@@ -1,0 +1,6 @@
+[theme]
+primaryColor = "#E07A5F"             # 主按鈕與互動元件：溫暖珊瑚橘紅
+backgroundColor = "#f9f8f8"          # 網頁主背景：柔和暖米白（不刺眼、具關懷感）
+secondaryBackgroundColor = "#F4EFE6" # 卡片與區塊背景：溫暖燕麥奶茶色
+textColor = "#3D405B"                # 文字顏色：沉穩深灰藍（比純黑更柔和好讀）
+font = "sans serif"
