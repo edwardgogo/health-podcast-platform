@@ -4,3 +4,5 @@ __pycache__/
 temp_audio/
 output_audio/
 *.mp3
+client_secret.json
+get_token.py
