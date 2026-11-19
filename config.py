@@ -35,7 +35,7 @@ def get_gemini_api_key() -> str:
     return api_key or ""
 
 # 使用支援多模態(圖片理解)且反應快速、免費額度高的 Gemini 3.5 Flash 模型
-GEMINI_MODEL_NAME = "gemini-3.5-flash"
+GEMINI_MODEL_NAME = "gemini-3.5-flash-lite"
 
 # ==========================================
 # 聽眾年齡分層設定 (對應企畫書 5.1 節)
