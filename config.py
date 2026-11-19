@@ -122,7 +122,8 @@ VOICE_CONFIG = {
     "Doctor": {
         "role_name": "林醫師",
         "voice_id": "zh-TW-HsiaoYuNeural",     # 微軟台灣沉穩女聲
-        "pitch": "+0Hz"
+        "pitch": "+0Hz",
+        "tts_rate": "+5%"
     },
     "Nurse": {
         "role_name": "小陳護理師",
