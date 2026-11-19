@@ -46,7 +46,7 @@ def generate_podcast_script(extracted_info: str, age_key: str, tone_key: str, ex
 【聽眾與語氣設定】
 - 目標聽眾：{age_cfg['label']}（溝通原則：{age_cfg['style_guide']}）
 - 對談語氣：{tone_cfg['label']}（{tone_cfg['prompt_desc']}）
-- 目標總字數：約精簡至 8 到 12 個來回對話（節奏明快，聚焦核心衛教觀念）
+- 目標總字數：約精簡至 12 到 15 個來回對話（節奏明快，聚焦核心衛教觀念）
 {extra_info_section}
 【⚠️ 語音合成（TTS）專用純文字鐵律 — 違反將導致系統崩潰】
 1. 絕對禁止出現任何特殊符號、數學符號或標記語言：嚴禁使用 <, >, &, *, #, ~, —, /, %, +, =, () 等符號。
@@ -71,7 +71,7 @@ def generate_podcast_script(extracted_info: str, age_key: str, tone_key: str, ex
             },
             "dialogue": {
                 "type": "ARRAY",
-                "description": "醫師與護理師交替對談的完整劇本清單，建議約 8 到 12 個來回對話",
+                "description": "醫師與護理師交替對談的完整劇本清單，建議約 12 到 15 個來回對話",
                 "items": {
                     "type": "OBJECT",
                     "properties": {

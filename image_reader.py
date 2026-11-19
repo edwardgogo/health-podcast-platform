@@ -34,6 +34,10 @@ def extract_health_info(image_input: Union[str, Path, Image.Image]) -> str:
     print("  [觀察節點 2] 圖片已成功轉為 Base64，準備發送請求。")
 
     prompt_text = load_image_reader_prompt()
+    prompt_text += (
+        "\n\n【特別提取要求】：請以臨床醫護人員的嚴謹標準，完整、逐字逐項提取這張衛教單張上的所有資訊。"
+        "切勿過度精簡或自行刪除細節"
+    )
     url = f"https://generativelanguage.googleapis.com/v1beta/models/{config.GEMINI_MODEL_NAME}:generateContent?key={api_key}"
     payload = {
         "contents": [{"parts": [{"text": prompt_text}, {"inline_data": {"mime_type": "image/png", "data": img_base64}}]}]
